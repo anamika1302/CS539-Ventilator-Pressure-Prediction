@@ -1,8 +1,8 @@
 # Ventilator Pressure Prediction
 Course Project for CS539[Machine Learning] in WPI
 
-## Authors: 
-Weinan Zhi, Yang Mo, Lei Ma, Zhiyi Huang, Yueqin Liang
+## Team Members: 
+Anamika Kumari, Ashay Aglawe, Kratika Shetty, Murlidhar Koripalli
 
 
 ## Project Description
