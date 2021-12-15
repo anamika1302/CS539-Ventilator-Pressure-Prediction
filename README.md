@@ -94,18 +94,22 @@ Pressure is a function of past valve settings: p[i] = f(u_in[:i]). But u_in is n
 
 Since we are using a Dataset from a kaggle competition, we were unable to to get the true Y values for the test data. We split the trainng data as follows to get the training and test data - 
 
-**Training Data** 70% of the Total Breath IDs = 4,225,200 records
+**Training Data** 70% of the Total Breath IDs = 52,815 Breath IDs
 
-**Test Data** 30% of the Total Breath IDs =. 22,635 records
+**Test Data** 30% of the Total Breath IDs = 22,635 Breath IDs
 
 
 ### XGBOOST Using XGBRegressor
 
 XGBoost was first considered for modeling the training data since it can be used for regression predictive modeling. We also used repeated 5-fold cross-validation to evaluate and pressure was found out by averaging pressure across multiple runs. After the training data fit into the XGBoost model, the result is generated shown below:
 
+<p align="middle">
+  <img src="Images/xgboost.png" width="450" />
+</p>
+
 ### Bi-LSTM Model 
 
-Stacked Bi-LSTMs were implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data.
+Stacked Bi-LSTMs Model was implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data.
 
 5-fold cross validation was performed and avaerage pressure was calculated after 5 runs.
 
