@@ -33,7 +33,7 @@ The ventilator data used in this competition was provided by [Kaggle](https://ww
 
 ### R & C Attributes
 
-A ventilator must consider lung attributes Compliance(C) and Resistance(R) to predict the optimal pressure.
+A ventilator must consider lung attributes Capacitance (C) and Resistance(R) to predict the optimal pressure.
 
 R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.
 
@@ -51,10 +51,42 @@ C can be thought of as the thickness of the balloon’s latex, the one with high
   <img src="Images/uout_time.png" width="450" />
 </p>
 
-## Preprocessing
-### Data Preparation
-Since the original dataset is not well normalized, Each image is cropped to 224 * 224 pixels resolution and RGB color theme.
-For future classification task, three subsets are created as follow:
+### Plot of pressure, u_in and u_out for breath_id = 1
+
+It is evident from below that u_out is zero during the inhalation and 1 during the exhalation.
+<p align="middle">
+  <img src="Images/breath_id_1_plot.png" width="500" />
+</p>
+
+### Distribuition of Pressure
+
+Variation of pressure is more during the inhalation phase of the breath.
+<p align="middle">
+  <img src="Images/pressure_one_cycle.png" width="450" />
+  <img src="Images/pressure_inhalation.png" width="450" /> 
+</p>
+
+### R and C values present in the Dataset
+
+There are three unique values for R and C each.
+<p align="middle">
+  <img src="Images/rc_unique.png" width="450" />
+</p>
+
+Plot of pressure across different combination of R & C for different Breath IDs is shown below. We can infer from below that pressure is dependent on the values of R and C.
+<p align="middle">
+  <img src="Images/pressure_rc.png" width="450" /> 
+</p>
+
+## Feature Engineering
+
+Pressure is a function of past valve settings: p[i] = f(u_in[:i]). But u_in is not an independent variable, u_in is the output of a controller, and the inputs of the controller are the past measured pressures: u_in[i] = g(p[:i+1]). Hence in order to get data from previous time steps data was preprocessed as follows - 
+
+ * Added new Lag features for u_in
+ * Exponential Moving Mean, Standard Deviation and correlation of u_in for each breath ID 
+ * Rolling Mean, Standard Deviation and Maximum of u_in for each breath. Here the size of the moving window is 10
+ * Expanding Mean, Standard Deviation and Maximum of u_in for each breath ID where size of minimum period is 2
+ * R and C are converted into indicator variables
 
 **trainingSet** 4750 RGB labeled images with 224\*224 resolution  
 
