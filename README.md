@@ -6,7 +6,7 @@ Anamika Kumari, Ashay Aglawe, Kratika Shetty, Murlidhar Koripalli
 
 
 ## Project Description
-Ventilators have proven to be a lifesaver during this past COVID time. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
+Ventilators have proven to be a lifesaver during the pandemic. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
 
 High-quality simulators could be an option, and the ones that are currently available are trained as an ensemble, with each model simulating a single lung setting. However, because the lungs and their attributes exist in a continuous space, a parametric approach could be investigated. Neural networks and deep learning architectures can be helpful in generalizing the varying characteristics than some of the PID controllers present in the industry. With many state-of-the-art machine learning and deep learning models available today, making use of them to make predictions would yield better results than the controllers.
 
