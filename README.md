@@ -101,7 +101,7 @@ Since we are using a Dataset from a kaggle competition, we were unable to to get
 
 ### XGBOOST Using XGBRegressor
 
-The above features
+XGBoost was first considered for modeling the training data. After the training data fit into the XGBoost model, the result is generated shown below:
 
 ### LSTM
 ![image5](ResNet18.png)
