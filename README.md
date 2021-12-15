@@ -1,14 +1,14 @@
 # Ventilator Pressure Prediction
-Course Project for CS539[Machine Learning] in WPI
+
 
 ## Team Members: 
 Anamika Kumari, Ashay Aglawe, Kratika Shetty, Murlidhar Koripalli
 
 
 ## Project Description
-Plant image identification has become an inter-discipline of botany and computer vision.There is a technical trend.  For example, a Microsoft app will tell you the name of a flower as well as a few other details when you take a picture of a flower. Our project is a cross-border collaboration between plants and machine learning. We used different models to identify a plant from a seed.
+Ventilators have proven to be a lifesaver during this past COVID time. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
 
-The reason why we did this project is because the identification of seeds by traditional methods, which require manually labeling, is difficult, time consuming, and sometimes frustrating. Our project proposed an efficient way to identify seeds with high accuracy. It means that we can improve crop yields, increase price of seeds product and reduce waste.
+High-quality simulators could be an option, and the ones that are currently available are trained as an ensemble, with each model simulating a single lung setting. However, because the lungs and their attributes exist in a continuous space, a parametric approach could be investigated. Neural networks and deep learning architectures can be helpful in generalizing the varying characteristics than some of the PID controllers present in the industry. With many state-of-the-art machine learning and deep learning models available today, making use of them to make predictions would yield better results than the controllers.
 
 
 
