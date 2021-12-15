@@ -107,13 +107,13 @@ XGBoost was first considered for modeling the training data since it can be used
 
 Stacked Bi-LSTMs were implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data.
 
-5-fold cross validation was performed and avaerage pressure was calculated after the 5 runs.
+5-fold cross validation was performed and avaerage pressure was calculated after 5 runs.
 
 Model parameters - 
  * Bi-LSTM - 4 Layers
  * 2 Dense Layers. One hidden dense ayer with ReLu activation and one output dense layer.
 
-Following Mean Absolute Error, R-squared snd Mean Squared Error were obtained - 
+Following Mean Absolute Error, R-squared and Mean Squared Error were obtained - 
 
 <p align="middle">
   <img src="Images/lstm_error.jpeg" width="450" />
