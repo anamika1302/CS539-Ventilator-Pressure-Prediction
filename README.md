@@ -113,6 +113,11 @@ Model parameters -
  * Bi-LSTM - 4 Layers; each consis
  * 1 Dense Layer
 
+Following Mean Squared Error, Mean Absolute Error and R-squared were obtained - 
+
+<p align="middle">
+  <img src="Images/lstm_error.jpeg" width="450" />
+</p>
 
 
 ## Conclusion
