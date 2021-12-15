@@ -127,7 +127,7 @@ Following Mean Absolute Error, R-squared and Mean Squared Error were obtained -
 
 
 ### References
-1. https://www.kaggle.com/ranjeetshrivastav/ventilator-pressure-prediction-xgboost/notebook 
-2. https://machinelearningmastery.com/xgboost-for-time-series-forecasting/
-3. https://www.kaggle.com/theoviel/deep-learning-starter-simple-lstm 
-4. https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4
+1. https://machinelearningmastery.com/xgboost-for-time-series-forecasting/
+2. https://www.kaggle.com/theoviel/deep-learning-starter-simple-lstm 
+3. https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4
+4. https://www.kaggle.com/ranjeetshrivastav/ventilator-pressure-prediction-xgboost/notebook
