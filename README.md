@@ -80,70 +80,32 @@ Plot of pressure across different combination of R & C for different Breath IDs 
 
 ## Feature Engineering
 
-Pressure is a function of past valve settings: p[i] = f(u_in[:i]). But u_in is not an independent variable, u_in is the output of a controller, and the inputs of the controller are the past measured pressures: u_in[i] = g(p[:i+1]). Hence in order to get data from previous time steps data was preprocessed as follows - 
+Pressure is a function of past valve settings: p[i] = f(u_in[:i]). But u_in is not an independent variable, u_in is the output of a controller, and the inputs of the controller are the past measured pressures: u_in[i] = g(p[:i+1]). Hence in order to get data from previous time steps data was preprocessed as follows. Following features were added - 
 
- * Added new Lag features for u_in
+ * New Lag features for u_in
  * Exponential Moving Mean, Standard Deviation and correlation of u_in for each breath ID 
  * Rolling Mean, Standard Deviation and Maximum of u_in for each breath. Here the size of the moving window is 10
  * Expanding Mean, Standard Deviation and Maximum of u_in for each breath ID where size of minimum period is 2
- * R and C are converted into indicator variables
-
-**trainingSet** 4750 RGB labeled images with 224\*224 resolution  
-
-**sampleSet** 2371 RGB labeled images with 224\*224 resolution
-
-**testSet** 794 RGB unlabeled images with 224\*224 resolution
-
-After these process, here are several examples:
-![regularized_images](preprocessed.png)
-
-Since this project will performed on ResNet and DenseNet using Pytorch, the final outputs are transformed into tensor format by Pytorch. For the size purpose, the output is not uploaded, but the [data loader](https://github.com/WeinanZhi/-CS539-PlantSeedPrediction/blob/master/data_loader.ipynb) can do the job in no time and write the output to the current working directory.
-
-The final output should consists of the following five files: 
-![output_files](output.png)
-
-**sample_X.pt** 2371 tensors corresponding to sampleSet 2371 images
-
-**train_X.pt** 4750 tensors corresponding to trainingSet 4750 images
-
-**test.pt** 794 tensors corresponding to testSet 794 images
-
-**sample_Y.txt** 2371 labels corresponding to sample_X.pt 2371 tensors
-
-**train_Y.txt** 4750 labels corresponding to train_X.pt 4750 tensors
-
-### Data Segmentation
-[Segmented Data](https://drive.google.com/drive/folders/19Px2relPjxfPZWV7UGHchqaqXX8RZBRc?usp=sharing)
-
-Outside datasets similar to original datasets have been used for better accuracy. Here is an example:
-
-![image1](outside.png)
-
-![image2](lable.png)
-
-Segmentation Result:
-
-![image3](before_segment.png)
-
-![image4](aftersegment.png)
+ * R and C after converting into indicator variables
 
 
 
-## Transfer Learning of Image Classification
+## Implementation
 
-We used two models, one is ResNet18, the other is DensNet121.
+Since we are using a Dataset from a kaggle competition, we were unable to to get the true Y values for the test data provided in kaggle. We split the trainng data as follows to get the training and test data - 
+
+**Training Data** 70% of the Total Breath IDs = 4,225,200 records
+
+**Test Data** 30% 70% of the Total Breath IDs =. 22,635 records
 
 
-## ResNet18 MOdel
+### XGBOOST Using XGBRegressor
+
+The above features
+
+### LSTM
 ![image5](ResNet18.png)
 
-
-## DenseNet121 Model
-The second model we used is DenseNet121 Model.
-Compared with RESNET, densenet proposes a more radical dense connection mechanism. That is, all layers are connected to each other, especially, each layer will accept all the previous layers as its additional input.
-![image](pics/des1.png)
-The network structure of densenet is mainly composed of denseblock and transition. In denseblock, each layer has the same characteristic map size and can be connected in the channel dimension.
-![image](pics/des2.png)
 
 
 
