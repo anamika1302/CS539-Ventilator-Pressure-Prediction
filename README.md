@@ -4,14 +4,10 @@
 ## Team Members: 
 Anamika Kumari, Ashay Aglawe, Kratika Shetty, Murlidhar Koripalli
 
-
-## Project Description
+## Background and Motivation
 Ventilators have proven to be a lifesaver during the pandemic. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
 
-High-quality simulators could be an option, and the ones that are currently available are trained as an ensemble, with each model simulating a single lung setting. However, because the lungs and their attributes exist in a continuous space, a parametric approach could be investigated. Neural networks and deep learning architectures can be helpful in generalizing the varying characteristics than some of the PID controllers present in the industry. With many state-of-the-art machine learning and deep learning models available today, making use of them to make predictions would yield better results than the controllers.
-
-
-
+A traditional pressure controlled ventilator lets air in and out of a patient’s lungs according to airway pressures specified by a clinician. These hand-tuned PID controllers and similar variants have dominated the industry for decades but these are very unreliable, overshooting or undershooting their values or fluctuating very fast. Hence a data driven machine learning approach can be considered as an alternative solution. The goal of the project, which is also a Kaggle competition, is to predict the airway pressure in the respiratory circuit during the breath given the time series of control inputs. We aim to develop a model that self-regulates as per the patient’s vital in real-time.
 
 ## Dataset
 ### Plant Seedlings Dataset
