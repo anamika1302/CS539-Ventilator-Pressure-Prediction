@@ -107,11 +107,11 @@ XGBoost was first considered for modeling the training data since it can be used
   <img src="Images/xgboost.png" width="450" />
 </p>
 
-**Feature Importance** Feature Importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. Here features are automatically named according to their index in the input array.
+**Feature Importance** Feature Importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. Here, the features are automatically named according to their index in the input array. Columns id, time_step and u_out have the top three importance score. 
 
 <p align="middle">
   <img src="Images/feature_importance.png" width="450" />
- <img src="Images/fxgboost_index.png" width="450" />
+ <img src="Images/xgboost_index.png" width="450" />
 </p>
 
 Here top 3 features fO, f2, f5 corresponds to
