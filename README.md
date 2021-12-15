@@ -111,7 +111,7 @@ Stacked Bi-LSTMs were implemented in Keras. Bidirectional Long Short-Term Memory
 
 Model parameters - 
  * Bi-LSTM - 4 Layers
- * 2 Dense Layers. One hidden dense ayer with ReLu activation and one output dense layer.
+ * 2 Dense Layers in the output layer with ReLu activation
 
 Following Mean Absolute Error, R-squared and Mean Squared Error were obtained - 
 
