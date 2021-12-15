@@ -110,8 +110,8 @@ Stacked Bi-LSTMs were implemented in Keras. Bidirectional Long Short-Term Memory
 5-fold cross validation was performed and avaerage pressure was calculated after the 5 runs.
 
 Model parameters - 
- * Bi-LSTM - 4 Layers; each consis
- * 1 Dense Layer
+ * Bi-LSTM - 4 Layers
+ * 1 Dense Layers. One hidden dense ayer with ReLu activatio and one output dense layer.
 
 Following Mean Absolute Error, R-squared snd Mean Squared Error were obtained - 
 
@@ -121,8 +121,10 @@ Following Mean Absolute Error, R-squared snd Mean Squared Error were obtained -
 
 
 ## Conclusion
-1. Bi-LSTM Model performed  better than Xgboost.
-2. MSE of the Bi-LSTM model was better than that of Xgboost
+1. Good scores were obtained with 3 to 5 layers Bi-LSTM layers.
+2. Bi-LSTM Model performed  better than Xgboost.
+3. MSE of the Bi-LSTM model was better than that of Xgboost
+
 
 ### References
 1. https://www.kaggle.com/ranjeetshrivastav/ventilator-pressure-prediction-xgboost/notebook 
