@@ -32,15 +32,13 @@ The ventilator data used in this competition was provided by [Kaggle](https://ww
 
 A ventilator must consider lung attributes Compliance(C) and Resistance(R) to predict the optimal pressure.
 
-| R | R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.|
+R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.
+
+
+C can be thought of as the thickness of the balloon’s latex, the one with higher C having thinner latex will be easier to let air in.
+| Column |Description|
 |-------|--------|
-| ![image1](Images/r_high.png) | ![image2](Images/r_less.png) |
-
-
-
-| C | R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.|
-|-------|--------|
-| ![image3](Images/c_less.png) | ![image4](Images/c_high.png) |
+| <img src="https://github.com/anamika1302/CS539-Ventilator-Pressure-Prediction/blob/main/Images/r_explanation.png" width="440" height="400"> | <img src="https://github.com/anamika1302/CS539-Ventilator-Pressure-Prediction/blob/main/Images/c_explanation.png" width="460" height="400"> |
 
 ## Exploratory Data Analysis
 
