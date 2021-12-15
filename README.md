@@ -94,9 +94,9 @@ Pressure is a function of past valve settings: p[i] = f(u_in[:i]). But u_in is n
 
 Since we are using a Dataset from a kaggle competition, we were unable to to get the true Y values for the test data. We split the trainng data as follows to get the training and test data - 
 
-**Training Data** 70% of the Total Breath IDs = 4,225,200 records
+**Training Data** 70% of the Total Breath IDs = 52,815 Breath IDs
 
-**Test Data** 30% of the Total Breath IDs = 1,810,800 records
+**Test Data** 30% of the Total Breath IDs = 22, 635 Breath IDs
 
 
 ### XGBOOST Using XGBRegressor
