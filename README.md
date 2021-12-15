@@ -28,6 +28,19 @@ The ventilator data used in this competition was provided by [Kaggle](https://ww
 | u_out | The control input for the exploratory solenoid valve. Either 0 or 1 |
 | pressure | The airway pressure measured in the respiratory circuit, measured in cmH2O |
 
+### R & C Attributes
+
+A ventilator must consider lung attributes Compliance(C) and Resistance(R) to predict the optimal pressure.
+
+| R | R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.|
+|-------|--------|
+| ![image1](Images/r_high.png) | ![image2](Images/r_less.png) |
+
+
+
+| C | R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.|
+|-------|--------|
+| ![image3](Images/c_less.png) | ![image4](Images/c_high.png) |
 
 ## Exploratory Data Analysis
 
