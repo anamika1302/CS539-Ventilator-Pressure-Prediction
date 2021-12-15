@@ -96,7 +96,7 @@ Since we are using a Dataset from a kaggle competition, we were unable to to get
 
 **Training Data** 70% of the Total Breath IDs = 4,225,200 records
 
-**Test Data** 30% of the Total Breath IDs =. 22,635 records
+**Test Data** 30% of the Total Breath IDs = 1,810,800 records
 
 
 ### XGBOOST Using XGBRegressor
