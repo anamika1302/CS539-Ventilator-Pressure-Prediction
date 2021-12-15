@@ -112,18 +112,5 @@ Model parameters -
 
 
 ## Conclusion
-
-GPU: Google Colab
-
-Epochs: 25
-
-Unsegmented data set
-
-Segmented data set
-
-Batch size:4
-
-
-## Conclusion
 1. Bi-LSTM Model performed  better than Xgboost.
 2. MSE of the Bi-LSTM model was better than that of Xgboost
