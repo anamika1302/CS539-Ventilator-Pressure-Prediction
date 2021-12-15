@@ -9,12 +9,28 @@ Ventilators have proven to be a lifesaver during the pandemic. However, mechanic
 
 A traditional pressure controlled ventilator lets air in and out of a patient’s lungs according to airway pressures specified by a clinician. These hand-tuned PID controllers and similar variants have dominated the industry for decades but these are very unreliable, overshooting or undershooting their values or fluctuating very fast. Hence a data driven machine learning approach can be considered as an alternative solution. The goal of the project, which is also a Kaggle competition, is to predict the airway pressure in the respiratory circuit during the breath given the time series of control inputs. We aim to develop a model that self-regulates as per the patient’s vital in real-time which can lead to future development of intelligent ventilators.
 
-## Dataset
-### Plant Seedlings Dataset
-The Original Dataset comes from [Plant Seedlings Dataset](https://arxiv.org/abs/1711.05458). In this project, [V1](https://vision.eng.au.dk/?download=/data/WeedData/Nonsegmented.zip) of the dataset is taken as input. The creater released a second version, [V2](https://vision.eng.au.dk/?download=/data/WeedData/NonsegmentedV2.zip), eliminating the problem that some of the images have more than one seeds. 
-Here are some random samples of each spices:
 
-![examples](examples.png)
+
+## Dataset
+### Ventilator Data
+The ventilator data used in this competition was provided by [Kaggle](https://www.kaggle.com/c/ventilator-pressure-prediction/data) and was produced using a modified [open-source ventilator](https://www.peoplesvent.org/en/latest/) connected to an [artificial bellows test lung](https://www.ingmarmed.com/product/quicklung/) via a respiratory circuit.
+
+### Columns
+
+| Column |Description|
+|-------|--------|
+| id | Globally unique time step identifier across an entire file |
+| breath_id | Globally unique time step for breaths | 
+| R | Lung attribute indicating how restricted the airway is (in cmH2O/L/S) |
+| C | Lung attribute indicating how compliant the lung is (in mL/cmH2O). Physically, this is the change in volume per change in pressure |
+| time_step | The actual time stamp | 
+| u_in | The control input for the inspiratory solenoid valve. Ranges from 0 to 100 | 
+| u_out | The control input for the exploratory solenoid valve. Either 0 or 1 |
+| pressure | The airway pressure measured in the respiratory circuit, measured in cmH2O |
+
+
+## Exploratory Data Analysis
+
 
 ## Preprocessing
 ### Data Preparation
