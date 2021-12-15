@@ -2,7 +2,7 @@
 
 
 ## Team Members: 
-Anamika Kumari, Ashay Aglawe, Kratika Shetty, Muralidhar Koripalli
+Anamika Kumari, Ashay Aglawe, Kratika Shetty, Murlidhar Koripalli
 
 ## Background and Motivation
 Ventilators have proven to be a lifesaver during the pandemic. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
@@ -102,6 +102,10 @@ Since we are using a Dataset from a kaggle competition, we were unable to to get
 ### XGBOOST Using XGBRegressor
 
 XGBoost was first considered for modeling the training data since it can be used for regression predictive modeling. We also used repeated 5-fold cross-validation to evaluate and pressure was found out by averaging pressure across multiple runs. After the training data fit into the XGBoost model, the result is generated shown below:
+
+<p align="middle">
+  <img src="Images/xgboost.png" width="450" />
+</p>
 
 ### Bi-LSTM Model 
 
