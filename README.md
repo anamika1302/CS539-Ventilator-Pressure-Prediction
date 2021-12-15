@@ -111,8 +111,10 @@ XGBoost was first considered for modeling the training data since it can be used
 
 <p align="middle">
   <img src="Images/feature_importance.png" width="450" />
+ <img src="Images/fxgboost_index.png" width="450" />
 </p>
 
+Here top 3 features fO, f2, f5 corresponds to
 ### Bi-LSTM Model 
 
 Stacked Bi-LSTMs Model was implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data.
