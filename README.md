@@ -27,6 +27,9 @@ The ventilator data used in this competition was provided by [Kaggle](https://ww
 | u_in | The control input for the inspiratory solenoid valve. Ranges from 0 to 100 | 
 | u_out | The control input for the exploratory solenoid valve. Either 0 or 1 |
 | pressure | The airway pressure measured in the respiratory circuit, measured in cmH2O |
+ 
+
+## Exploratory Data Analysis
 
 ### R & C Attributes
 
@@ -35,13 +38,18 @@ A ventilator must consider lung attributes Compliance(C) and Resistance(R) to pr
 R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.
 
 
-C can be thought of as the thickness of the balloon’s latex, the one with higher C having thinner latex will be easier to let air in.
-| Column |Description|
+C can be thought of as the thickness of the balloon’s latex, the one with higher C will have thinner latex and it would be easier to let air in.
+| R |C|
 |-------|--------|
-| <img src="https://github.com/anamika1302/CS539-Ventilator-Pressure-Prediction/blob/main/Images/r_explanation.png" width="440" height="400"> | <img src="https://github.com/anamika1302/CS539-Ventilator-Pressure-Prediction/blob/main/Images/c_explanation.png" width="460" height="400"> |
+| <img src="Images/r_explained.png" width="440" height="400"> | <img src="Images/c_explained.png" width="440" height="400"> |
 
-## Exploratory Data Analysis
+### Analysis of pressure, u_in and u_out with respect to time_step
 
+<p align="middle">
+  <img src="Images/pressure_time.png" width="450" />
+  <img src="Images/uin_time.png" width="450" /> 
+  <img src="Images/uout_time.png" width="450" />
+</p>
 
 ## Preprocessing
 ### Data Preparation
