@@ -92,24 +92,26 @@ Pressure is a function of past valve settings: p[i] = f(u_in[:i]). But u_in is n
 
 ## Implementation
 
-Since we are using a Dataset from a kaggle competition, we were unable to to get the true Y values for the test data provided in kaggle. We split the trainng data as follows to get the training and test data - 
+Since we are using a Dataset from a kaggle competition, we were unable to to get the true Y values for the test data. We split the trainng data as follows to get the training and test data - 
 
 **Training Data** 70% of the Total Breath IDs = 4,225,200 records
 
-**Test Data** 30% 70% of the Total Breath IDs =. 22,635 records
+**Test Data** 30% of the Total Breath IDs =. 22,635 records
 
 
 ### XGBOOST Using XGBRegressor
 
-XGBoost was first considered for modeling the training data. After the training data fit into the XGBoost model, the result is generated shown below:
+XGBoost was first considered for modeling the training data since it can be used for regression predictive modeling. We also used repeated 5-fold cross-validation to evaluate and pressure was found out by averaging pressure across multiple runs.After the training data fit into the XGBoost model, the result is generated shown below:
 
-### LSTM
-![image5](ResNet18.png)
+### Bi-LSTM Model 
+
+Model parameters - 
 
 
 
 
-## Experiments
+
+## Conclusion
 
 GPU: Google Colab
 
@@ -123,8 +125,5 @@ Batch size:4
 
 
 ## Conclusion
-We plot all the accuracy in one linechart as below, and get three conclusion.
-1. Segmented data performed  better on ResNet18.
-2. Segmented data  and original data performed  almost same  on Densenet121.
-3. Densenet121 performed better than ResNet18 because of the complicated input structure.
-![image](pics/linechart.png)
+1. Bi-LSTM Model performed  better than Xgboost.
+2. MSE of the Bi-LSTM model was better than that of Xgboost
