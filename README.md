@@ -101,11 +101,11 @@ Since we are using a Dataset from a kaggle competition, we were unable to to get
 
 ### XGBOOST Using XGBRegressor
 
-XGBoost was first considered for modeling the training data since it can be used for regression predictive modeling. We also used repeated 5-fold cross-validation to evaluate and pressure was found out by averaging pressure across multiple runs.After the training data fit into the XGBoost model, the result is generated shown below:
+XGBoost was first considered for modeling the training data since it can be used for regression predictive modeling. We also used repeated 5-fold cross-validation to evaluate and pressure was found out by averaging pressure across multiple runs. After the training data fit into the XGBoost model, the result is generated shown below:
 
 ### Bi-LSTM Model 
 
-Stacked Bi-LSTMs were implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data, since there can be lags of unknown duration between important events in a time series because of which we decided to implement this model in our project. 
+Stacked Bi-LSTMs were implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data.
 
 5-fold cross validation was performed and avaerage pressure was calculated after the 5 runs.
 
@@ -115,7 +115,12 @@ Model parameters -
 
 
 
-
 ## Conclusion
 1. Bi-LSTM Model performed  better than Xgboost.
 2. MSE of the Bi-LSTM model was better than that of Xgboost
+
+### References
+1. https://www.kaggle.com/ranjeetshrivastav/ventilator-pressure-prediction-xgboost/notebook 
+2. https://machinelearningmastery.com/xgboost-for-time-series-forecasting/
+3. https://www.kaggle.com/theoviel/deep-learning-starter-simple-lstm 
+4. https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4
