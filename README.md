@@ -123,7 +123,7 @@ Following Mean Absolute Error, R-squared snd Mean Squared Error were obtained -
 ## Conclusion
 1. Good scores were obtained with 3 to 5 layers Bi-LSTM layers.
 2. Bi-LSTM Model performed  better than Xgboost.
-3. MSE of the Bi-LSTM model was better than that of Xgboost
+3. MAE of the Bi-LSTM model was better than that of Xgboost
 
 
 ### References
