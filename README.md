@@ -107,6 +107,12 @@ XGBoost was first considered for modeling the training data since it can be used
   <img src="Images/xgboost.png" width="450" />
 </p>
 
+**Feature Importance** Feature Importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. Here features are automatically named according to their index in the input array.
+
+<p align="middle">
+  <img src="Images/feature_importance.png" width="450" />
+</p>
+
 ### Bi-LSTM Model 
 
 Stacked Bi-LSTMs Model was implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data.
