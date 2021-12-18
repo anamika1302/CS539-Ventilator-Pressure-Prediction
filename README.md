@@ -36,12 +36,13 @@ The ventilator data used in this competition was provided by [Kaggle](https://ww
 A ventilator must consider lung attributes Capacitance (C) and Resistance(R) to predict the optimal pressure.
 
 R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.
-
-
+<p align="middle">
+<img src="Images/r_explained.png" width="440" height="400"> 
+</p>
 C can be thought of as the thickness of the balloon’s latex, the one with higher C will have thinner latex and it would be easier to let air in.
-| R |C|
-|-------|--------|
-| <img src="Images/r_explained.png" width="440" height="400"> | <img src="Images/c_explained.png" width="440" height="400"> |
+<p align="middle">
+<img src="Images/c_explained.png" width="440" height="400"> 
+</p>
 
 ### Analysis of pressure, u_in and u_out with respect to time_step
 
